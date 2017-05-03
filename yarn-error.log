@@ -1,0 +1,39 @@
+Arguments: 
+  /Users/JaredGilbert/.nvm/versions/node/v7.9.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/JaredGilbert/.nvm/versions/node/v7.9.0/bin:/Users/JaredGilbert/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  0.23.4
+
+Node version: 
+  7.9.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "react-webpack-rails-tutorial",
+    "version": "0.0.1",
+    "private": true,
+    "engines": {
+      "node": "6.9.0",
+      "npm": "4.1.1"
+    },
+    "scripts": {
+      "postinstall": "cd client && yarn install",
+      "rails-server": "echo 'visit http://localhost:3000/hello_world' && foreman start -f Procfile.dev",
+      "test": "rspec"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/JaredGilbert/.config/yarn/global'
