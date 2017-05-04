@@ -1,12 +1,8 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const HelloWorld = ({ name, updateName }) => (
+const App = ({ name, updateName }) => (
   <div>
-    <h3>
-      Hello, {name}!
-    </h3>
-    <hr />
     <form >
       <label htmlFor="name">
         Say hello to:
@@ -18,12 +14,16 @@ const HelloWorld = ({ name, updateName }) => (
         onChange={(e) => updateName(e.target.value)}
       />
     </form>
+    <hr />
+    <h3>
+      Hello, {name}!
+    </h3>
   </div>
-);
+)
 
-HelloWorld.propTypes = {
+App.propTypes = {
   name: PropTypes.string.isRequired,
   updateName: PropTypes.func.isRequired,
-};
+}
 
-export default HelloWorld;
+export default App
