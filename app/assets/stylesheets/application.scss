@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize/components/color";
+ $primary-color: color("grey", "darken-4") !default;
+ $secondary-color: color("light-green", "accent-3") !default;
+ @import 'materialize';
+
+ body {
+   background: color("grey", "darken-4");
+ }
+
+ .collection {
+   border: 1px solid black;
+   a.collection-item {
+    color: black;
+  }
+ }
