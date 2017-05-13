@@ -16,16 +16,31 @@
 
  @import "materialize/components/color";
  $primary-color: color("grey", "darken-4") !default;
- $secondary-color: color("light-green", "accent-3") !default;
+ $secondary-color: #00ff2b !default;
  @import 'materialize';
 
  body {
-   background: color("grey", "darken-4");
+   background: lighten(color("grey", "darken-4"), 2.5%);
  }
 
  .collection {
-   border: 1px solid black;
+   border: none;
    a.collection-item {
     color: black;
+    height: 15%;
   }
+ }
+
+ .scrollable-list {
+   height: 67vh;
+   overflow-y: scroll;
+ }
+
+ .logo {
+   @extend .responsive-img;
+   width: 10%;
+ }
+
+ nav {
+   height: 96px;
  }
