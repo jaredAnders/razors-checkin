@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RazorsCheckin</title>
+    <title>Razors Check-in</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,11 +11,13 @@
   <body>
 
     <nav>
-      <div class="nav-wrapper container">
-        <a href="#" class="brand-logo">Razors</a>
+      <div class='nav-wrapper container valign-wrapper'>
+        <%= image_tag 'razors-logo.png', class: 'logo' %>
+        <a class='brand-logo right'>Razors Check-in</a>
       </div>
     </nav>
 
     <%= yield %>
+
   </body>
 </html>
