@@ -15,12 +15,12 @@
  */
 
  @import "materialize/components/color";
- $primary-color: color("grey", "darken-4") !default;
+ $primary-color: darken(color("grey", "darken-4"), 5%) !default;
  $secondary-color: #00ff2b !default;
  @import 'materialize';
 
  body {
-   background: lighten(color("grey", "darken-4"), 2.5%);
+   background: color("grey", "darken-4");
  }
 
  .collection {
@@ -38,9 +38,9 @@
 
  .logo {
    @extend .responsive-img;
-   width: 10%;
+   width: 7.5%;
  }
 
  nav {
-   height: 96px;
+   height: 88px;
  }

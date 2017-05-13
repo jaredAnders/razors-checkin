@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'lodash'
 
 const testNames = [
   {
@@ -43,7 +44,7 @@ const testNames = [
   },
 ]
 
-const listItems = testNames.map((name) => {
+const listItems = _.sortBy(testNames, ['time', 'firstName']).map((name) => {
   return (
     <a className='collection-item'>
       <span className='left'>
