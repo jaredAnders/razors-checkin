@@ -16,6 +16,10 @@
    height: 88px;
  }
 
+ ::selection {
+   background: rgba(#00ff2b, .5);
+ }
+
  .logo {
    @extend .responsive-img;
    width: 7.5%;
@@ -57,9 +61,6 @@
  }
 
  .arrows {
-   margin-left: -5em;
+   @extend .grey-text;
+   margin: 0 1em 0 -5em;
  }
-
- // .scroll-arrow {
- //   @extend .grey-text, .right;
- // }

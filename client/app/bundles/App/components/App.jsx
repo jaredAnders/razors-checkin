@@ -75,21 +75,11 @@ const listItems = _.sortBy(testNames, ['time', 'firstName']).map((name, i) => {
 
 const App = () => (
   <div className='container'>
-    {/* <div className='center'> */}
-      {/* <i className='material-icons grey-text'>
-        keyboard_arrow_up
-      </i> */}
-    {/* </div> */}
-    {/* <i className='material-icons scroll-arrow scroll-up'>
-      keyboard_arrow_up
-    </i>
-    <br/> */}
     <div className='arrows right'>
-      <i className='material-icons grey-text'>
+      <i className='material-icons'>
         keyboard_arrow_up
       </i>
-      {/* <br/> */}
-      <i className='material-icons grey-text'>
+      <i className='material-icons'>
         keyboard_arrow_down
       </i>
     </div>
@@ -97,9 +87,6 @@ const App = () => (
     <ul className='collection scrollable-list'>
       {listItems}
     </ul>
-    {/* <i className='material-icons scroll-arrow scroll-down'>
-      keyboard_arrow_down
-    </i> */}
   </div>
 )
 
