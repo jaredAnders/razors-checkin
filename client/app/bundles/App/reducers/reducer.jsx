@@ -1,15 +1,15 @@
 import { combineReducers } from 'redux'
-import { NAME_UPDATE } from '../constants/constants'
+import { GET_DATA } from '../actions/actionTypes'
 
-const name = (state = '', action) => {
+const appointments = (state = '', action) => {
   switch (action.type) {
-    case NAME_UPDATE:
-      return action.text
+    case GET_DATA:
+      return action.payload
     default:
       return state
   }
 }
 
-const reducer = combineReducers({ name })
+const reducer = combineReducers({ appointments })
 
 export default reducer
