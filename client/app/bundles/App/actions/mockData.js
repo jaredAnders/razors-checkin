@@ -1,0 +1,58 @@
+export const mockData = [
+  {
+    id: 0,
+    firstName: 'Vito',
+    lastName: 'Corleone',
+    time: '2:45',
+    checkedIn: true,
+  },
+  {
+    id: 1,
+    firstName: 'Sam',
+    lastName: 'Rothstein',
+    time: '3:45',
+    checkedIn: false,
+  },
+  {
+    id: 2,
+    firstName: 'Henry',
+    lastName: 'Hill',
+    time: '3:15',
+    checkedIn: true,
+  },
+  {
+    id: 3,
+    firstName: 'Tony',
+    lastName: 'Soprano',
+    time: '3:00',
+    checkedIn: false,
+  },
+  {
+    id: 4,
+    firstName: 'Al',
+    lastName: 'Capone',
+    time: '4:30',
+    checkedIn: false,
+  },
+  {
+    id: 5,
+    firstName: 'Lucky',
+    lastName: 'Luciano',
+    time: '3:30',
+    checkedIn: false,
+  },
+  {
+    id: 6,
+    firstName: 'John',
+    lastName: 'Gotti',
+    time: '3:45',
+    checkedIn: false,
+  },
+  {
+    id: 7,
+    firstName: 'Michael',
+    lastName: 'Corleone',
+    time: '3:00',
+    checkedIn: true,
+  },
+]
